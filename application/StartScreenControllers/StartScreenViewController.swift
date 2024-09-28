@@ -28,6 +28,8 @@ class StartPageViewController: UIPageViewController, UIPageViewControllerDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .white
+        
         if let firstVC = pages.first {
             setViewControllers([firstVC], direction: .forward, animated: false, completion: nil)
         }
